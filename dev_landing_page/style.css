@@ -1,0 +1,41 @@
+body{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#beauty{
+    display: flex;
+    gap: 20px;
+    }
+
+#Construction{
+    display: flex;
+    gap: 20px;
+    
+    }
+
+img{
+    width: 100%;
+}
+
+#main-container{
+    display: flex;
+    gap: 30px;
+}
+
+.heading{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.hero-heading{
+    font-size: 50px;
+    font-weight: bold;
+
+}
+
+.logo{
+    font-size: 30px;
+    font-style: italic;
+    color: orange;
+}
