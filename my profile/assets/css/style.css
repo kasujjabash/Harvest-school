@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Montserrat", serif;
+    /* margin: 5px; */
+}
+header{
+    padding-left: 150px;
+    padding-right: 150px;
+    background-color: #2d5f52;
+
+    margin: 0;
+}
+section{
+
+    margin: 30px 150px 30px 150px;
+}
+p{
+    font-size: 18px;
+    line-height: 1.5;
+}
+body{
+    /* padding: 0 150px 0 150px ; */
+    background-color: #121216;
+    color: #fafbfb;
+    margin: 0
+    /* margin: 80px 150px 50px 150px; */
+
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* position: fixed;
+    z-index: 9999; */
+}
+.nav-links{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#hero-section{ 
+    margin: 0;
+    padding-left: 150px;
+    padding-right: 150px;
+    display: flex;
+    align-items: center;
+    background-color: #2d5f52;
+    background-image: ('assets/img/bash.png');
+}
+.content{
+    padding:40px 80px 0px 80px;
+}
+.name{
+    font-size: 60px;
+    margin-bottom: 5px;
+
+}
+/* .hero-paragraph{
+    padding-bottom:20px;
+    padding-top:20px;
+} */
+button{
+    background-color: orange;
+    border: orange;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.about-button{
+    margin-top: 20px;
+}
+
+#experience-section{
+    display: flex;
+    justify-content: center;
+
+}
+.experience-content{
+flex: 2;
+margin-right: 180px;
+}
+.details{
+    flex: 1;
+    }
+
+#projects-section{
+    background-color: #000;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+#projects-cards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 30px 150px 30px 150px;
+
+
+}
+
+.card-1, .card-2, .card-3{
+    background-color: #16161b;
+    /* padding: 20px; */
+    border-radius: 10px;
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+    min-height: 400px;
+    max-height: 800px;
+
+}
+
+.card-content{
+    padding: 30px;
+}
+
+.card-image{
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+input{
+    width: 700px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid white;
+}
+
+textarea{
+    width: 700px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid white;}
+
+.contacts{
+    display: flex;
+    justify-content: space-between;
+}
