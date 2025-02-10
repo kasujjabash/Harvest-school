@@ -1,0 +1,13 @@
+p{
+    background-color: orange;
+    padding: 30px;
+
+}
+
+div{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: aqua;
+    padding: 20px;
+}

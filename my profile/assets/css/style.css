@@ -96,7 +96,7 @@ margin-right: 180px;
 #projects-section{
     background-color: #000;
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 10px;
 }
 #projects-cards{
     display: flex;
@@ -106,9 +106,15 @@ margin-right: 180px;
     gap: 30px;
     padding: 30px 150px 30px 150px;
 
-
 }
 
+.text-button{
+    color: orange;
+}
+.text-button:hover{
+    color:#2d5f52 ;
+    font-size: 18px;
+}
 .card-1, .card-2, .card-3{
     background-color: #16161b;
     /* padding: 20px; */
@@ -119,6 +125,20 @@ margin-right: 180px;
     min-height: 400px;
     max-height: 800px;
 
+}
+
+.service-card{
+    background-color: #16161b;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+    min-height: 300px;
+    max-height: 600px;
+}
+.service-card:hover{
+background-color: #2d5f52;
 }
 
 .card-content{
@@ -152,3 +172,18 @@ textarea{
     display: flex;
     justify-content: space-between;
 }
+footer{
+    padding: 80px 0 5px 0;
+    background-color: #122722;
+    border-top-left-radius:  80px;
+    border-top-right-radius:  80px;
+    margin-top: 100px;
+
+}
+
+.divider{
+    border-top: 1px solid rgba(128, 128, 128, 0.222);
+    margin-top: 100px;
+    width: 100%;
+}
+
