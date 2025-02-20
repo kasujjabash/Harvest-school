@@ -2,18 +2,27 @@
 
 *{
     font-family: "Montserrat", serif;
+    box-sizing: border-box; 
+
     /* margin: 5px; */
 }
-header{
-    padding-left: 150px;
-    padding-right: 150px;
-    background-color: #2d5f52;
 
+header{
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: #2d5f52;
     margin: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
+
+
+
 section{
 
-    margin: 30px 150px 30px 150px;
+    margin: 5% 10%  5% 10%;
 }
 p{
     font-size: 18px;
@@ -23,7 +32,9 @@ body{
     /* padding: 0 150px 0 150px ; */
     background-color: #121216;
     color: #fafbfb;
-    margin: 0
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
     /* margin: 80px 150px 50px 150px; */
 
 }
@@ -46,9 +57,9 @@ a{
 }
 
 #hero-section{ 
-    margin: 0;
-    padding-left: 150px;
-    padding-right: 150px;
+    padding-top: 8%;
+    padding-left: 10%;
+    padding-right: 10%;
     display: flex;
     align-items: center;
     background-color: #2d5f52;
@@ -62,10 +73,13 @@ a{
     margin-bottom: 5px;
 
 }
-/* .hero-paragraph{
-    padding-bottom:20px;
-    padding-top:20px;
-} */
+#about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+}
+
 button{
     background-color: orange;
     border: orange;
@@ -74,6 +88,7 @@ button{
     font-weight: bold;
     font-size: 18px;
     border-radius: 5px;
+    
 }
 
 .about-button{
@@ -104,7 +119,7 @@ margin-right: 180px;
     align-items: center;
     flex-wrap: wrap;
     gap: 30px;
-    padding: 30px 150px 30px 150px;
+    padding: 30px 10% 30px 10%;
 
 }
 
@@ -115,7 +130,8 @@ margin-right: 180px;
     color:#2d5f52 ;
     font-size: 18px;
 }
-.card-1, .card-2, .card-3{
+
+.project-card{
     background-color: #16161b;
     /* padding: 20px; */
     border-radius: 10px;
@@ -124,7 +140,6 @@ margin-right: 180px;
     max-width: 400px;
     min-height: 400px;
     max-height: 800px;
-
 }
 
 .service-card{
@@ -187,3 +202,185 @@ footer{
     width: 100%;
 }
 
+
+/* responsiveness phone */
+
+@media screen and (max-width: 768px){
+
+    #hero-section{
+        flex-direction: column;
+        padding-top: 20%;
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-bottom: 10%;
+    }
+    header{
+        padding-left: 5%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    #about{
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+    .about-image{
+        width:95%;
+
+    }
+    .experience-content{
+        flex: 2;
+        margin-right: 3%;
+        }
+
+    section{
+
+            margin: 3% 5%  3% 5%;
+        }
+    .name{
+        font-size: 50px;
+        margin-bottom: 5px;}
+
+    .content{
+        padding:20px 20px 0px 3%;
+        }
+    #experience-section{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #projects-cards{
+        padding: 3% 5% 3% 5%;}
+
+
+    .contacts{
+        flex-direction: column;
+    }
+    input{
+        width: 100%;
+    }
+
+    textarea{
+        width: 100%;
+    }
+    .main-contacts{
+        margin: 3%;
+        padding-top: 10%;
+    }
+    p{
+        font-size: 1.5rem;
+    }
+
+    .service-card{
+        background-color: #16161b;
+        padding: 1rem;
+
+    }
+
+    h2, h3, h4{
+        font-size: 1.5rem;
+    }
+    .hero-paragraph{
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    #projects-cards{
+        flex-direction: column;
+    }
+
+    /* .card-1, .card-2, .card-3{
+        min-width: 70%;
+        max-width: 80%;
+        min-height: 90%;
+        max-height: 100%;
+    
+    } */
+
+    .project-card{
+        min-width: 70%;
+        max-width: 80%;
+        min-height: 90%;
+        max-height: 100%; 
+    }
+
+    .service-card{
+        min-width: 70%;
+        max-width: 80%;
+        min-height: 90%;
+        max-height: 100%;
+    }
+    .contact-details{
+        text-align: center;
+    }
+    .Send-btn {
+        display: block;
+        margin: 0 auto;
+      }
+}
+
+@media screen and (min-width: 820px) and (max-width: 1280px) {
+    #projects-cards{
+        flex-direction: column;
+    }
+    #hero-section{
+        flex-direction: column;
+        padding-bottom: 8rem;
+    }
+
+    #about{
+        flex-direction: column;
+        gap: 80px;
+    }
+    #experience-section{
+        flex-direction: column;
+        text-align: center;
+        
+    }
+    .experience-content{
+        flex: 2;
+        margin-right: 0;
+        }
+    .project-card{
+        min-width: 70%;
+        max-width: 80%;
+        min-height: 90%;
+        max-height: 100%;
+    
+    }
+
+    .service-card{
+        min-width: 70%;
+        max-width: 80%;
+        min-height: 90%;
+        max-height: 100%;
+    }
+    .contact-details{
+        text-align: center;
+    }
+    .Send-btn {
+        display: block;
+        margin: 0 auto;
+      }
+
+      .about-image{
+        width:100%;
+
+    }
+    .contacts{
+        flex-direction: column;
+    }
+    .contact-details{
+        text-align: center;
+        margin-top: 3rem;
+    }
+
+    .Send-btn {
+        display: flex;
+        justify-content: left;
+        margin: 3rem auto;
+      }
+
+}
